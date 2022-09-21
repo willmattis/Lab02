@@ -1,0 +1,5 @@
+/root/Lab02-1/build/CMakeFiles/rebuild_cache.dir
+/root/Lab02-1/build/CMakeFiles/edit_cache.dir
+/root/Lab02-1/build/CMakeFiles/runMain.dir
+/root/Lab02-1/build/CMakeFiles/runTests.dir
+/root/Lab02-1/build/CMakeFiles/applibrary.dir

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Lab02-1/StackQueue.cpp
+iostream
+/root/Lab02-1/iostream
+StackQueue.h
+/root/Lab02-1/StackQueue.h
+ctype.h
+/root/Lab02-1/ctype.h
+
+/root/Lab02-1/StackQueue.h
+string
+-
+

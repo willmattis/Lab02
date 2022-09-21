@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/root/Lab02-1/build",
+  "command": "/usr/bin/g++    -g   -std=c++17 -o CMakeFiles/runMain.dir/main.cpp.o -c /root/Lab02-1/main.cpp",
+  "file": "/root/Lab02-1/main.cpp"
+},
+{
+  "directory": "/root/Lab02-1/build",
+  "command": "/usr/bin/g++    -g   -std=c++17 -o CMakeFiles/runTests.dir/tests.cpp.o -c /root/Lab02-1/tests.cpp",
+  "file": "/root/Lab02-1/tests.cpp"
+},
+{
+  "directory": "/root/Lab02-1/build",
+  "command": "/usr/bin/g++  -Dapplibrary_EXPORTS  -g -fPIC   -std=c++17 -o CMakeFiles/applibrary.dir/StackQueue.cpp.o -c /root/Lab02-1/StackQueue.cpp",
+  "file": "/root/Lab02-1/StackQueue.cpp"
+}
+]
