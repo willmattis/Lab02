@@ -23,7 +23,7 @@ public:
 	{
 		cout<<"1st Stack: "<<stack1.toString()<<endl;
 		cout<<"2nd Stack: "<<stack2.toString()<<endl;
-		cout<<"2nd Stack: "<<stack2.toString()<<endl;
+		cout<<"3rd Stack: "<<stack3.toString()<<endl;
 	}
 
 private:
@@ -162,8 +162,8 @@ int main()
 						record.deQueue();
 
 				    	}
-				    cout<<"You have completed the tower of hanoi"<<endl;
-					}
+				    	cout<<"You have completed the tower of hanoi"<<endl;
+			        }
 		}
 
 
