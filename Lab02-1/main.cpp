@@ -21,7 +21,9 @@ public:
 
 	void PrintTowers()
 	{
-
+		cout<<"1st Stack: "<<stack1.toString()<<endl;
+		cout<<"2nd Stack: "<<stack2.toString()<<endl;
+		cout<<"2nd Stack: "<<stack2.toString()<<endl;
 	}
 
 private:
@@ -38,7 +40,23 @@ int main()
 	cout << "<disk>,<column from>,<column to>   NOTE no spaces!!!!" << endl;
 
 	TowersOfHannoiGame game;
-
+	
+	ArrayBasedQueue record;
+	ArrayBasedStack stack1;
+	ArrayBasedStack stack2;
+	ArrayBasedStack stack3;
+	ArrayBasedStack temp;
+	
+	int A;
+	int B;
+	int C;
+	int D;
+	
+	stack1.push(4);
+	stack1.push(3);
+	stack1.push(2);
+	stack1.push(1);
+	
 	bool receivedEndToken = false;
 
 	while (!receivedEndToken && !game.IsGameEnded())
@@ -94,10 +112,58 @@ int main()
 				}
 
 				cout << "Disk " << diskId << " From " << fromId << " To " << toId << endl;
-
+				record.enQueue(inputline)
+				if (fromId==1) {
+					stack1.pop();
+					if (toId==2) {
+						stack2.push(diskId);
+					}
+					else if (toId==3) {
+						stack3.push(diskId);
+					}
+				}
+				else if (fromId=2) {
+				    stack2.pop();
+				    if (toId=1) {
+					stack1.push(diskId);
+				    }
+				    else if (toId=3) {
+					stack3.push(diskId);
+				    }
+				}
+				else if (fromId=3) {
+				    stack3.pop();
+				    if (toId=1) {
+					stack1.pop();
+				    }
+				    else if (toId=2) {
+					stack2.push(diskId);
+				    }  
+				}
+				temp=stack3;
 				
+				A=temp.peek();
+				temp.pop();
+				
+				B=temp.peek();
+				temp.pop();
+				
+				C=temp.peek();
+				temp.pop();
+				
+				D=temp.peek();
+				temp.pop();
 
-			}
+				if ((A=1) && (B=2) && (C=3) && (D=4)) {
+				    
+					receivedEndToken=true;
+					cout<<"Steps: "<<toString(record)<<endl;
+					while (!record.isEmpty()) {
+						record.deQueue();
+
+				    	}
+				    cout<<"You have completed the tower of hanoi"<<endl;
+					}
 		}
 
 
