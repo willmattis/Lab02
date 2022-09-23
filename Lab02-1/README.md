@@ -53,9 +53,9 @@ Tower 3: 2
 
 Participation rubric of teammates.  List out for your all team members how much they participated.
 ```
-	             Member1	Member2	Member3
+	              Mattis 	   Mayer   Hopper
 Member1 (opinion)	33	     33	     33
-Member2 (opinion)	33	     33	     33
+Member2 (opinion)	35	     35	     30
 Member3 (opinion)	33	     33	     33
 ```			
 			
