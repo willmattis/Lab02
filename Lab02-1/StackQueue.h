@@ -55,6 +55,8 @@ public:
 
 	// outputs contents to a string
 	virtual std::string toString() const = 0;
+
+	virtual void Display();
 protected:
 
 };
@@ -71,6 +73,7 @@ public:
 	//If the ADT is empty throw an exception indicating this
 	std::string peek() const override;
 	std::string toString() const override;
+	void Display();
 
 private:
 	std::string *q_vals;

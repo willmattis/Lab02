@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "TowerGame.h"
+
 
 using namespace std;
 
@@ -19,11 +19,11 @@ public:
 
 	bool IsGameEnded() { return m_GameEnded; }
 
-	void PrintTowers()
+	void PrintTowers(ArrayBasedStack stack1st, ArrayBasedStack stack2nd, ArrayBasedStack stack3rd)
 	{
-		cout<<"1st Stack: "<<stack1.toString()<<endl;
-		cout<<"2nd Stack: "<<stack2.toString()<<endl;
-		cout<<"3rd Stack: "<<stack3.toString()<<endl;
+		cout<<"1st Stack: "<<stack1st.toString()<<endl;
+		cout<<"2nd Stack: "<<stack2nd.toString()<<endl;
+		cout<<"3rd Stack: "<<stack3rd.toString()<<endl;
 	}
 
 private:
@@ -62,7 +62,7 @@ int main()
 	while (!receivedEndToken && !game.IsGameEnded())
 	{
 		std::string inputLine;
-		game.PrintTowers();
+		game.PrintTowers(stack1, stack2, stack3);
 		cout << "Enter Move " << endl;
 		getline(cin, inputLine);
 		if (inputLine == "-1")
@@ -112,7 +112,7 @@ int main()
 				}
 
 				cout << "Disk " << diskId << " From " << fromId << " To " << toId << endl;
-				record.enQueue(inputline)
+				record.enQueue(inputLine);
 				if (fromId==1) {
 					stack1.pop();
 					if (toId==2) {
@@ -157,7 +157,8 @@ int main()
 				if ((A=1) && (B=2) && (C=3) && (D=4)) {
 				    
 					receivedEndToken=true;
-					cout<<"Steps: "<<toString(record)<<endl;
+					cout<<"Steps: "<<endl;
+					record.Display(); 
 					while (!record.isEmpty()) {
 						record.deQueue();
 

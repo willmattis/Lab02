@@ -152,3 +152,10 @@ ArrayBasedQueue::~ArrayBasedQueue()
 {
 	delete[] q_vals; 
 }
+void ArrayBasedQueue::Display()
+{
+	int i;
+	for (i = 0; i < q_last; i++) {
+		printf(" %d <-- ", q_vals[i]);
+	}
+}
